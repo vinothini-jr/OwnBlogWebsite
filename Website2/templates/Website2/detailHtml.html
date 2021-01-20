@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 {% extends 'Website2/base.html' %}
-
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
@@ -19,9 +18,7 @@
               <p>{{ post.content|safe }}</p>
             <div class="col-10"></div>
         </div>
-
     </div>
-
 <h3>comments..</h3>
 <hr/>
 {% if not post.comments.all %}
@@ -44,7 +41,7 @@ no comments yet
 <br/>
 <br/>
 <br/>
-    </div>
+</div>
 {% endblock %}
 </body>
 </html>

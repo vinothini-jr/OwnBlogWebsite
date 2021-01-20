@@ -13,6 +13,11 @@
 <body>
 {% block content %}
 <br/>
+    <div class="container">
+        {% for i in pic %}
+        {% if i.images %}
+  <img src="{{ i.images.url }}" class="img-fluid" height="200px" width="800px" alt="problem solving" >{% endif %}{% endfor %}
+</div>
 <div class="container">
   <div class="row ">
     <div class="col-sm-9">
